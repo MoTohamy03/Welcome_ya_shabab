@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  
+    display: flex;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+body form{
+    margin: auto;
+    width: 50%;
+    padding-top: 160px;
+}
+body form fieldset{
+  margin-bottom: 70px;
+}
+body form fieldset legend{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+}  
+/*
+body form .flavor legend::before{
+  content: "CHOOSE A FLAVOR";
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  z-index: -1;
+  color: black;
+} */
+body form .flavor legend::after{
+  content: "CHOOSE A FLAVOR:";
+  position: absolute;
+  top: -4px;
+  left: 2px;
+  z-index: -1;
+  color: black;
+}
+/*
+body form .states legend::before{
+  content: "STATES";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  z-index: -1;
+  color: black;
+} */
+body form .states legend::after{
+  content: "STATES:";
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  z-index: -1;
+  color: black;
+}
+/*
+body form .color legend::before{
+  content: "ACCENT-COLOR:";
+  position: absolute;
+  top: -2px;
+  left: 1px;
+  z-index: -1;
+  color: black;
+} */
+body form .color legend::after{
+  content: "ACCENT-COLOR";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  z-index: -1;
+  color: black;
+}
+
+legend{
+  -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+  letter-spacing: 2.5px;
+  font-style: oblique 20deg;
+}
+
+body form .flavor legend::before{
+  transform: translate(-5px,-5px);
+  text-shadow: -1px -1px 5px black;
+}
+
+body form .flavor legend::after{
+  transform: translate(5px,5px);
+  text-shadow: -1px -1px 5px black;
+}
+
+body form fieldset label{
+  font-weight: bold;
+  font-size: 25px;
+  
+}
+
+body form .flavor .vanilla{
+  transition: all 0.3s;
+}
+
+/*
+using this
+input#vanilla:checked + label.vanilla{
+  color: ;
+}
+*/
+
+body form .flavor .vanilla:hover, #vanilla{
+  color: white;
+  text-shadow: 4px 4px 1px #bfbfbf;
+  accent-color: #bfbfbf;
+  -webkit-text-stroke: 1.5px #bfbfbf;
+
+
+}
+body form .flavor .Chocolate{
+  transition: all 0.3s;
+}
+body form .flavor .Chocolate:hover, #chocolate{
+  color: white;
+  text-shadow: 3px 4px 2px #411900;
+  accent-color: #411900;
+  -webkit-text-stroke: 1.5px #411900;
+}
+
+body form .flavor .Strawberry{
+  transition: all 0.3s;
+}
+
+body form .flavor .Strawberry:hover, #strawberry{
+  color: white;
+  text-shadow: 3px 4px 1px #ec0304;
+  accent-color:#ec0304;
+  -webkit-text-stroke: 1.5px #ec0304;
+
+}
+
+.states label{
+  opacity: 0.42;
+  transition: all 0.3s;
+}
+.states label:hover ,#disabled_and_checked,#disabled,#able{
+  color: green;
+  opacity: 100%;
+  font-weight: bolder;
+  accent-color:green;
+}
+.color .red{
+  transition: all 0.3s;
+}
+
+.color .red:hover,#R{
+  color: white;
+  text-shadow: 3px 4px 1px red;
+  accent-color:red;
+  -webkit-text-stroke: 1.5px red;
+
+}
+
+.color .green{
+  transition: all 0.3s;
+}
+.color .green:hover,#G{
+  color: white;
+  text-shadow: 3px 4px 1px green;
+  accent-color:green;
+  -webkit-text-stroke: 1.5px green;
+
+}
+
+.color .blue, .color .auto{
+  transition: all 0.3s;
+}
+.color .blue:hover, .color .auto:hover,#B,#auto{
+  color: white;
+  text-shadow: 3px 4px 1px blue;
+  accent-color:blue;
+  -webkit-text-stroke: 1.5px blue;
+
+}
+.color .pink{
+  transition: all 0.3s;
+}
+.color .pink:hover,#pink{
+  color: white;
+  text-shadow: 3px 4px 1px pink;
+  accent-color:pink;
+}
+.color .yellow{
+  transition: all 0.3s;
+}
+
+.color .yellow:hover,#yellow{
+  color: white;
+  text-shadow: 3px 4px 1px rgb(214, 214, 95);
+  accent-color:rgb(214, 214, 95);
+  -webkit-text-stroke: 1.5px yellow;
+
+
+}
